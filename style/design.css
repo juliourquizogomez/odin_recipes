@@ -1,26 +1,33 @@
 /*  */
 
-.clases {
-    color: blue;
-    font-weight: bold;
+
+.caja {
+
+    background-color: green;
+
+    /* FLEXBOX */
+
+    display: flex;
+    flex: 1;
+
+
 }
 
-#claves {
-    color: red;
-    font-weight: lighter;
-}
+.box1, .box2, .box3 {
 
-.prueba {
     background-color: red;
     color: blue;
     text-align: center;
+    font: bold;
     
     /* PRUEBAS DE CAJA */
     
-    padding: 10px;
-    border: 30px solid #Ffff00;
-    margin: 60px;
-    height: 150px;
-    width: 150px;
+    padding: 5px;
+    border: 10px solid #Ffff00;
+    margin: 10px;
+    height: 50px;
+    width: 100px;
 
 }
+
+
