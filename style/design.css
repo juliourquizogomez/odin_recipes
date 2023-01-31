@@ -1,0 +1,26 @@
+/*  */
+
+.clases {
+    color: blue;
+    font-weight: bold;
+}
+
+#claves {
+    color: red;
+    font-weight: lighter;
+}
+
+.prueba {
+    background-color: red;
+    color: blue;
+    text-align: center;
+    
+    /* PRUEBAS DE CAJA */
+    
+    padding: 10px;
+    border: 30px solid #Ffff00;
+    margin: 60px;
+    height: 150px;
+    width: 150px;
+
+}
