@@ -1,5 +1,11 @@
 /*  */
 
+div {
+
+    flex: 1;
+    /*justify-content: space-around;*/
+    gap: 25px;
+}
 
 .caja {
 
@@ -8,12 +14,18 @@
     /* FLEXBOX */
 
     display: flex;
-    flex: 1;
+    /*flex: 1;*/
 
 
 }
 
-.box1, .box2, .box3 {
+/*
+.prueba {
+    flex: 2;
+}
+*/
+
+.box1, .box2, .box3, .prueba {
 
     background-color: red;
     color: blue;
@@ -31,3 +43,10 @@
 }
 
 
+/* 
+
+flex-shrink: 1 es para reducir todas las cajas a las mismas dimensiones 
+flex-direction: ;
+align-item: ; alinear todos los items dentro de una caja de una forma especifica.
+
+*/
