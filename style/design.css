@@ -1,11 +1,12 @@
 /*  */
-
+/*
 div {
 
     flex: 1;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
     gap: 25px;
 }
+*/
 
 .caja {
 
@@ -50,3 +51,131 @@ flex-direction: ;
 align-item: ; alinear todos los items dentro de una caja de una forma especifica.
 
 */
+
+/* SGV */
+
+.container {
+    max-width: 200px;
+    margin: auto;
+}
+  
+  .svg-circle:hover + .svg-text-group {
+    opacity: 0;
+  }
+
+
+/* TABLAS */
+
+table, tr, th {
+    border: 1px solid black;
+}
+
+
+/* ESTILOS PREDETERMINADOS: RESET */
+
+/*
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*/
+
+/* EM */
+
+.parent {
+    font-size: 5px;
+}
+
+.child {
+    font-size: 2em;
+}
+
+
+/* PADRE E HIJOS */
+
+
+main > div {
+    background-color: blue;
+}
+
+main > div > div {
+    background-color: red;
+}
+
+
+/* GRID */
+
+.grid_container {
+
+    display: grid;
+    /*mas elementos en columns, mas columnas*/
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    column-gap: 35px;
+    row-gap: 10px;
+    /* overflow: auto; */
+    /* resize: both; */
+}
+
+.grid_1, .grid_2, .grid_3, .grid_4{
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.pagina {
+    display: inline-grid;
+    grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+    background-color: lightblue; 
+    grid-template-areas:
+      "living-room living-room living-room living-room living-room"
+      "living-room living-room living-room living-room living-room"
+      "bedroom bedroom bathroom kitchen kitchen"
+      "bedroom bedroom bathroom kitchen kitchen"
+      "closet closet bathroom kitchen kitchen"    
+}
+  
+.room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+  
+#living-room {
+    grid-area:  living-room;
+}
+  
+#kitchen {
+    grid-area: kitchen;
+}
+  
+#bedroom {
+    grid-area: bedroom;
+}
+  
+#bathroom {
+    grid-area: bathroom;
+}
+  
+#closet {
+    grid-area: closet;
+}

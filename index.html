@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="style/design.css">
 
 <html lang="en">
+
     <body>
 
         <img src="images/box.png">
@@ -28,6 +29,113 @@
 
         </div>
 
+
+        <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect x=0 y=0 width=100 height=100 fill="burlywood"/>
+                <path d="M 10 10 H 90 V 90 L 10 60" fill="transparent" stroke="black" stroke-width="3"/>
+                <circle cx=50 cy=50 r=20 class="svg-circle"/>
+                <g class="svg-text-group">
+                  <text x="20" y="25" rotate="10" id="hello-text">Hello!</text>
+                  <use href="#hello-text" x="-10" y="65" fill="white"/>
+                </g>
+            </svg>
+        </div>
+
+
+        <div class="tablas">
+
+            <table>
+                <tr>
+                  <th>First Header</th>
+                  <th>Second Header</th>
+                </tr>
+                <tr>
+                  <td>This is a data cell</td>
+                  <td>This is also a data cell!</td>
+                </tr>
+              </table>
+
+        </div>
+
+
+        <!-- EM -->
+
+        <div class="parent">
+            I'm 15px
+            
+            <div class="child">
+            I'm 30px, as expected
+                
+            <div class="child">
+                I'm 60px, trouble starts!
+
+                <div class="child">
+                I'm 120px, now we're really in trouble!
+                </div>
+              
+                </div>
+            
+            </div>
+          
+        </div>
+
+
+        <main class="parent">
+
+            PADRE
+
+            <div class="child group1">
+                HIJO 1
+                <div class="grand-child group1"> NIETO 1</div>
+            </div>
+
+            <div class="child group2">
+                HIJO 2
+                <div class="grand-child group2"> NIETO 2</div>
+            </div>
+
+            <div class="child group3">
+                HIJO 3
+                <div class="grand-child group3"> NIETO 3</div>
+            </div>
+
+        </main>
+
+
+        <!-- FORMULARIOS -->
+
+        <form action="example.com/path" method="post">
+            <fieldset>
+                <legend> EJEMPLO FORM </legend>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" placeholder = "algo...">
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+
+
+        <!-- GRID -->
+
+        <div class="grid_container">
+            <div class="grid_1"> GRID 1 </div>
+            <div class="grid_2"> GRID 2 </div>
+            <div class="grid_3"> GRID 3 </div>
+            <div class="grid_4"> GRID 4 </div>
+        </div>
+
+        <div class="pagina">
+            <div class="room" id="living-room">Living Room</div>
+            <div class="room" id="kitchen">Kitchen</div>
+            <div class="room" id="bedroom">Bedroom</div>
+            <div class="room" id="bathroom">Bathroom</div>
+            <div class="room" id="closet">Closet</div>
+          </div>
+
+
+        <script src="dynamic/script.js">
+            <button class = "click"> PULSAR </button>
+        </script>
     </body>
 
 <!--  -->
