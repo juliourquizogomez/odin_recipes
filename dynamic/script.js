@@ -67,6 +67,19 @@ const juanfran = new medico('JuanFran', 27);
 botonJuan.addEventListener("click", juanfran.sayHello)
 
 
+const FactoryFunction = string => {
+  const capitalizeString = () => console.log(string.toUpperCase());
+  const printString = () => console.log(`----${capitalizeString()}----`);
+  return { capitalizeString };
+};
+
+const taco = FactoryFunction('taco');
+
+
+taco.capitalizeString();
+
+
+// EJEMPLO PRIORIDADES VARIABLES
 
 let a = 17;
 
@@ -79,13 +92,9 @@ func(99);
 console.log(a);
 
 
-const FactoryFunction = string => {
-    const capitalizeString = () => console.log(string.toUpperCase());
-    const printString = () => console.log(`----${capitalizeString()}----`);
-    return { capitalizeString };
-};
-  
-const taco = FactoryFunction('taco');
+// EJEMPLO EXPORTAR ARCHIVOS .JS
 
+import { functionOne } from 'primeraFuncion';
 
-taco.capitalizeString();
+functionOne();
+
